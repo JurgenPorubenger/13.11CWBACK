@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  .reg
+    h1 Add Post
+    .inp
+      input(type='text' placeholder='title' id='post_title')
+      input(type='text' placeholder='text' id='post_text')
+    .btn
+      button(type='submit' id='reg_btn') Push!
+  //.log
+  //  h1 Login
+  //  .inp
+  //    input(type='text' placeholder='email' id='log_email')
+  //    input(type='text' placeholder='pwd' id='log_pwd')
+  //  .btn
+  //    button(type='submit' id='log_btn') Login
+  script(src='./javascripts/main.js')
+  //script(src='./javascripts/main2.js')
